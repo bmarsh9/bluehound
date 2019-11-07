@@ -1,6 +1,11 @@
 # bluehound
 Tool for parsing and analyzing sharphound data in Neo4J... and making it pretty
 
+# prereq
+```
+1.) Clone the repo for the same folder structure
+2.) Import data from Sharphound into neo4j
+```
 
 # install
 ```
