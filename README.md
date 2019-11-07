@@ -3,8 +3,11 @@ Tool for parsing and analyzing sharphound data in Neo4J... and making it pretty
 
 # prereq
 ```
-1.) Clone the repo for the same folder structure
-2.) Import data from Sharphound into neo4j
+1.) Run on linux host (pref ubuntu)
+2.) You need Sharphound data and neo4j installed (neo4j database doesnt need to be on the same host as bluehound. You will specifiy that config in database.config file. (Recommended: best to place on same host for speed and security - communicates over unencrypted channel to the neo4j database) 
+3.) Clone the repo for the same folder structure
+4.) Import data from Sharphound into neo4j
+5.) Now we can continue
 ```
 
 # install
@@ -27,6 +30,6 @@ This takes the out.json data and populates it into the HTML template located at 
 
 Once complete, cd into the directory 'cd templates/black_dashboard'
 
-Now run, `python -m SimpleHTTPServer` and your cwd will be available to browse to on port 8000 in your browser (go to: http://<ip>:8000
+Now run, `python -m SimpleHTTPServer` and your cwd will be available to browse to on port 8000 in your browser (go to: http://yourip:8000
 
 Click on the report link to view the generated HTML report
